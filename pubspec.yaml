@@ -29,7 +29,10 @@ dependencies:
 
   # native splash
   flutter_native_splash: ^2.3.4
-  
+
+  # firebase for web app deployment
+  firebase_core: ^2.20.0
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
@@ -38,10 +41,10 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
-
-assets:
-  - assets/images/logo.png
-  - assets/images/cat.png
+  assets:
+    - assets/
+    - assets/images/logo.png
+    - assets/images/cat.png
 
 flutter_launcher_icons:
   android: true

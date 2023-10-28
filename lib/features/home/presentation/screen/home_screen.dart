@@ -49,7 +49,7 @@ class _HomeScreenState extends State<HomeScreen> {
     );
   }
 
-  Consumer<HomeProvider> _buildConsumer() {
+  Widget _buildConsumer() {
     return Consumer<HomeProvider>(
       builder: (_, provider, __) {
         if (provider.apiError != null) {
@@ -111,16 +111,13 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget _buildFloatingActionButton() {
     return isButtonEnabled
         ? FloatingActionButton(
-            onPressed: isButtonEnabled ? _onFloatingActionButtonPressed : null,
+            onPressed: _onFloatingActionButtonPressed,
             backgroundColor: Colors.deepPurple[200],
-            child: const Icon(
-              Icons.refresh_rounded,
-              color: Colors.white,
-            ),
+            child: const Icon(Icons.refresh_rounded, color: Colors.white),
           )
         : Padding(
             padding: const EdgeInsets.all(8),
-            child: Image.asset('images/cat.png', height: 40),
+            child: Image.asset('./assets/images/cat.png', height: 40),
           );
   }
 
