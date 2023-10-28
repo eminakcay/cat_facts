@@ -1,0 +1,67 @@
+name: cat_facts
+description: A new Flutter project.
+
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.1.3 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  # icon
+  cupertino_icons: ^1.0.2
+  
+  # service locator
+  get_it: ^7.6.0 
+
+  # http
+  http: ^1.1.0
+
+  # state management
+  provider: ^6.0.5
+
+  # google fonts
+  google_fonts: ^6.1.0
+
+  # native splash
+  flutter_native_splash: ^2.3.4
+  
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+  flutter_launcher_icons: ^0.13.1
+
+flutter:
+  uses-material-design: true
+
+assets:
+  - assets/images/logo.png
+  - assets/images/cat.png
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path_ios: 'assets/images/logo.png'
+  remove_alpha_ios: true
+  image_path: 'assets/images/logo.png'
+  windows:
+    generate: true
+    image_path: 'assets/images/logo.png'
+  web:
+    generate: true
+    image_path: 'assets/images/logo.png'
+    background_color: '#ffffff'
+    theme_color: '#ffffff'
+  macos:
+    generate: true
+    image_path: 'assets/images/logo.png'
+
+flutter_native_splash:
+  color: '#ffffff'
+  image: 'assets/images/cat.png'
+
